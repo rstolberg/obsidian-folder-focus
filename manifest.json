@@ -1,0 +1,10 @@
+{
+	"id": "folder-focus",
+	"name": "Folder Focus",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Open and focus the first file in a specified folder with configurable folder shortcuts.",
+	"author": "rstolberg",
+	"authorUrl": "https://github.com/rstolberg",
+	"isDesktopOnly": false
+}
