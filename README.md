@@ -1,6 +1,7 @@
 # Folder Focus
 
-An Obsidian plugin that opens and focuses the first file in a specified folder.
+An Obsidian plugin that opens and focuses the first file in a specified folder. Inspired by David Allen's Getting Things Done philosophy of an inbox, where everything inside of your inbox is to be worked on, completed, and put elsewhere. Folder focus gives you the ability to bind this process to a hotkey and speed up your workflow.
+
 
 ## Features
 
@@ -24,21 +25,3 @@ Paths are relative to your vault root:
 - `Current` - a folder called "Current" at the root
 - `Projects/Coding` - a folder called "Coding" inside "Projects"
 - `Notes/Daily` - a folder called "Daily" inside "Notes"
-
-## Installation
-
-### Manual Installation
-
-1. Download `main.js` and `manifest.json` from the releases
-2. Create a folder called `folder-focus` in your vault's `.obsidian/plugins/` directory
-3. Copy the files into that folder
-4. Enable the plugin in Obsidian settings
-
-### Build from Source
-
-```bash
-npm install
-npm run build
-```
-
-Copy `main.js` and `manifest.json` to your vault's `.obsidian/plugins/folder-focus/` directory.
