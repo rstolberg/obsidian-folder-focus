@@ -17,7 +17,8 @@ Assign a `hotkey.`
 
 
 Run command and process note in desired folder, moving note to desired directory when complete. `Repeat.`
-<img width="1657" height="1077" alt="image" src="https://github.com/user-attachments/assets/405b8ddf-e8a5-4d67-a196-33a88f5953b7" />
+<img width="1597" height="1215" alt="image" src="https://github.com/user-attachments/assets/b4313cf7-c0f2-4395-bd4a-f738c26486c5" />
+
 
 
 
