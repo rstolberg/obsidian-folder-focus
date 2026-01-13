@@ -2,6 +2,24 @@
 
 An Obsidian plugin that opens and focuses the first file in a specified folder. Inspired by David Allen's Getting Things Done philosophy of an inbox, where everything inside of your inbox is to be worked on, completed, and put elsewhere. Folder focus gives you the ability to bind this process to a hotkey and speed up your workflow.
 
+## Example Workflow
+
+Add a `folder shortcut.`
+<img width="1493" height="296" alt="image" src="https://github.com/user-attachments/assets/871a06b4-326b-4c6e-acbd-882f655afffa" />
+
+
+Designate a `folder.` Here I've chosen 'Current'
+<img width="1541" height="822" alt="image" src="https://github.com/user-attachments/assets/966d4cbc-2015-408e-bf6c-bcf9ef6cbef0" />
+
+
+Assign a `hotkey.`
+<img width="1437" height="301" alt="image" src="https://github.com/user-attachments/assets/8766a570-a12a-4372-b69b-f254864a718c" />
+
+
+Run command and process note in desired folder, moving note to desired directory when complete. `Repeat.`
+<img width="1657" height="1077" alt="image" src="https://github.com/user-attachments/assets/405b8ddf-e8a5-4d67-a196-33a88f5953b7" />
+
+
 
 ## Features
 
