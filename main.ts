@@ -6,7 +6,6 @@ import {
 	TFile,
 	TFolder,
 	Notice,
-	TextComponent,
 } from "obsidian";
 
 interface FolderShortcut {
@@ -41,7 +40,7 @@ export default class FolderFocusPlugin extends Plugin {
 			this.addCommand({
 				id: `open-folder-${shortcut.id}`,
 				name: `Open first file in: ${shortcut.name}`,
-				callback: () => this.openFirstFileInFolder(shortcut.path),
+				callback: () => { void this.openFirstFileInFolder(shortcut.path); },
 			});
 		}
 	}
@@ -107,7 +106,7 @@ class FolderFocusSettingTab extends PluginSettingTab {
 		const { containerEl } = this;
 		containerEl.empty();
 
-		containerEl.createEl("h2", { text: "Folder Focus Settings" });
+		new Setting(containerEl).setName("Folder focus settings").setHeading();
 
 		containerEl.createEl("p", {
 			text: "Add folder shortcuts below. Each shortcut creates a command you can bind to a hotkey.",
@@ -122,7 +121,7 @@ class FolderFocusSettingTab extends PluginSettingTab {
 					const id = `shortcut-${Date.now()}`;
 					this.plugin.settings.shortcuts.push({
 						id,
-						name: "New Folder",
+						name: "New folder",
 						path: "",
 					});
 					await this.plugin.saveSettings();
@@ -181,7 +180,7 @@ class FolderFocusSettingTab extends PluginSettingTab {
 				)
 				.addButton((button) =>
 					button.setButtonText("Test").onClick(() => {
-						this.plugin.openFirstFileInFolder(shortcut.path);
+						void this.plugin.openFirstFileInFolder(shortcut.path);
 					})
 				);
 
