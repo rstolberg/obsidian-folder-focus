@@ -106,7 +106,7 @@ class FolderFocusSettingTab extends PluginSettingTab {
 		const { containerEl } = this;
 		containerEl.empty();
 
-		new Setting(containerEl).setName("Folder focus settings").setHeading();
+		new Setting(containerEl).setName("Shortcuts").setHeading();
 
 		containerEl.createEl("p", {
 			text: "Add folder shortcuts below. Each shortcut creates a command you can bind to a hotkey.",
@@ -144,7 +144,7 @@ class FolderFocusSettingTab extends PluginSettingTab {
 				.setDesc("Display name for the command")
 				.addText((text) =>
 					text
-						.setPlaceholder("e.g., Current Tasks")
+						.setPlaceholder("e.g., Current tasks")
 						.setValue(shortcut.name)
 						.onChange(async (value) => {
 							shortcut.name = value;
@@ -159,7 +159,7 @@ class FolderFocusSettingTab extends PluginSettingTab {
 				)
 				.addText((text) =>
 					text
-						.setPlaceholder("e.g., Projects/Active")
+						.setPlaceholder("e.g., Projects/active")
 						.setValue(shortcut.path)
 						.onChange(async (value) => {
 							shortcut.path = value;
