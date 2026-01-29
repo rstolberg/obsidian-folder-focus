@@ -144,7 +144,7 @@ class FolderFocusSettingTab extends PluginSettingTab {
 				.setDesc("Display name for the command")
 				.addText((text) =>
 					text
-						.setPlaceholder("e.g., Current tasks")
+						.setPlaceholder("e.g., current tasks")
 						.setValue(shortcut.name)
 						.onChange(async (value) => {
 							shortcut.name = value;
@@ -189,7 +189,7 @@ class FolderFocusSettingTab extends PluginSettingTab {
 
 		if (this.plugin.settings.shortcuts.length > 0) {
 			containerEl.createEl("p", {
-				text: "Note: After adding or modifying shortcuts, reload the plugin (or Obsidian) to update the commands list. You can then assign hotkeys in Settings → Hotkeys.",
+				text: "After adding or modifying shortcuts, reload the plugin (or Obsidian) to update the commands list. You can then assign hotkeys in settings → hotkeys.",
 				cls: "setting-item-description",
 			});
 		}
