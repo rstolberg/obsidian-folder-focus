@@ -144,7 +144,7 @@ class FolderFocusSettingTab extends PluginSettingTab {
 				.setDesc("Display name for the command")
 				.addText((text) =>
 					text
-						.setPlaceholder("e.g., current tasks")
+						.setPlaceholder("Current tasks")
 						.setValue(shortcut.name)
 						.onChange(async (value) => {
 							shortcut.name = value;
